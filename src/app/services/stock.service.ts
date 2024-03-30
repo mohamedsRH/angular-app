@@ -1,12 +1,12 @@
-import {Injectable} from '@angular/core';
-import {HttpClient} from '@angular/common/http';
-import {Observable} from 'rxjs';
+import { HttpClient } from '@angular/common/http';
+import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class StockService {
-  private apiUrl = 'http://localhost:8082/stock';
+  private apiUrl = 'http://172.28.121.188:8086/stock';
 
   constructor(private http: HttpClient) {
   }
